@@ -1,0 +1,274 @@
+[
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 1,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Abdul_Basit_Murattal_192kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 1,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/abdulbaset_mujawwad/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 1,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/abdul_basit_murattal/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 1,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Abdul_Basit_Mujawwad_128kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 2,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Abdurrahmaan_As-Sudais_192kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 2,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/abdurrahmaan_as-sudays/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 3,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Abdullah_Basfar_192kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 4,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Abu_Bakr_Ash-Shaatree_128kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 4,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/abu_bakr_ash-shaatree/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 5,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/ahmad_nauina/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 6,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/akram_al_alaqmi/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 7,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Hudhaify_128kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 8,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/ali_hajjaj_alsouasi/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 9,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/aziz_alili/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 10,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Hani_Rifai_192kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 11,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Ibrahim_Walk_192kbps_TEST/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 12,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Maher_AlMuaiqly_64kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 13,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/mahmood_khaleel_al-husaree/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 13,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Husary_128kbps_Mujawwad/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 14,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Alafasy_128kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 15,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Muhammad_Ayyoub_128kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 16,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Muhammad_Jibreel_128kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 17,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Mohammad_al_Tablaway_128kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 17,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/mohammad_altablawi/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 18,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Minshawy_Mujawwad_192kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 18,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/muhammad_siddeeq_al-minshaawee/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 19,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/nasser_bin_ali_alqatami/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 20,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Ghamadi_40kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 21,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/sahl_yaaseen/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 22,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/salahbudair/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 23,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Saood_ash-Shuraym_128kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 23,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/sa3ood_al-shuraym/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 24,
+      "type": 0,
+      "audio_url": "http://mirrors.quranicaudio.com/everyayah/Yasser_Ad-Dussary_128kbps/"
+    }
+  },
+  {
+    "model": "Audio.Audio",
+    "fields": {
+      "qaria": 24,
+      "type": 1,
+      "audio_url": "http://download.quranicaudio.com/quran/yasser_ad-dussary/"
+    }
+  }
+]
