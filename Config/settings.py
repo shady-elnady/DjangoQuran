@@ -53,6 +53,7 @@ MY_APP= [
     "Qaria",
     "Audio",
     "Languages",
+    "User",
     "API",
 ]
 

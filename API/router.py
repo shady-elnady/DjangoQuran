@@ -7,6 +7,7 @@ from Tafseer.ViewsSet import TafseerViewSet
 from Qaria.ViewsSet import QariaViewSet
 from Audio.ViewsSet import AudioViewSet
 from Languages.ViewsSet import LanguageViewSet, AyaLanguageViewSet
+from User.ViewsSet import MyProfileViewSet, UserViewSet
 
 
 router = routers.DefaultRouter()
@@ -32,3 +33,7 @@ router.register('audio', AudioViewSet)
 ## Language App
 router.register('language', LanguageViewSet)
 router.register('aya_language', AyaLanguageViewSet)
+
+## User App
+router.register('users', UserViewSet)
+router.register('profiles', MyProfileViewSet)
