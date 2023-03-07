@@ -36,16 +36,7 @@ class UserSerializer(HyperlinkedModelSerializer):
             instance.set_password(password)
         instance.save()
         return instance
-    
-    # def create(self, validated_data):
-    #     user = User(
-    #         email=validated_data['email'],
-    #         username=validated_data['username']
-    #     )
-    #     user.set_password(validated_data['password'])
-    #     user.save()
-    #     return user
-
+ 
 
 class MyProfileSerializer(HyperlinkedModelSerializer):
     user = UserSerializer(many= False)

@@ -8,10 +8,9 @@ from .views import UserDetailAPI,RegisterUserAPIView
 app_name = "API"
 
 
-
 urlpatterns = [
-  path("get-details",UserDetailAPI.as_view()),
-  path('register',RegisterUserAPIView.as_view()),
+  path("get-my_details",UserDetailAPI.as_view(), name= "GetUserDetails"),
+  path('register',RegisterUserAPIView.as_view(), name= "Registeration"),
 ]
 
 

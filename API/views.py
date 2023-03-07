@@ -1,18 +1,18 @@
 from django.shortcuts import render
-
-# Create your views here.
-
-
 from rest_framework.permissions import AllowAny
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .Serializer import RegisterSerializer
-from User.Serializer import UserSerializer
-from django.contrib.auth.models import User
 from rest_framework.authentication import TokenAuthentication
 from rest_framework import generics
 
+from User.models import User
+from User.Serializer import UserSerializer
+
+# Create your views here.
+
 # Class based view to Get User Details using Token Authentication
+
 class UserDetailAPI(APIView):
   authentication_classes = (TokenAuthentication,)
   permission_classes = (AllowAny,)
@@ -20,6 +20,8 @@ class UserDetailAPI(APIView):
     user = User.objects.get(id=request.user.id)
     serializer = UserSerializer(user)
     return Response(serializer.data)
+
+
 
 #Class based view to register user
 class RegisterUserAPIView(generics.CreateAPIView):

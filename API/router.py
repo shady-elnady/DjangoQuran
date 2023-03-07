@@ -36,4 +36,4 @@ router.register('aya_language', AyaLanguageViewSet)
 
 ## User App
 router.register('users', UserViewSet)
-router.register('profiles', MyProfileViewSet)
+router.register('my_profile', MyProfileViewSet)

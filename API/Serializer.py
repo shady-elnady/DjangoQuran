@@ -1,15 +1,11 @@
-from django.contrib.auth.models import Group
+from django.contrib.auth.password_validation import validate_password
 from rest_framework.serializers import (
-    HyperlinkedModelSerializer,
     ModelSerializer,
     EmailField,
     CharField,
     ValidationError,
  )
-from rest_framework.response import Response
-from rest_framework import status
 from rest_framework.validators import UniqueValidator
-from django.contrib.auth.password_validation import validate_password
 
 from User.models import User
 
@@ -31,10 +27,10 @@ class RegisterSerializer(ModelSerializer):
     )
     class Meta:
         model = User
-        fields = ('username', 'password', 'password2','email', 'first_name', 'last_name')
+        fields = ('username', 'password', 'password2','email')
         extra_kwargs = {
-        'first_name': {'required': True},
-        'last_name': {'required': True}
+        # 'first_name': {'required': True},
+        # 'last_name': {'required': True}
         }
 
     def validate(self, attrs):
@@ -50,8 +46,8 @@ class RegisterSerializer(ModelSerializer):
         user = User.objects.create(
         username=validated_data['username'],
         email=validated_data['email'],
-        first_name=validated_data['first_name'],
-        last_name=validated_data['last_name']
+        # first_name=validated_data['first_name'],
+        # last_name=validated_data['last_name']
         )
         user.set_password(validated_data['password'])
         user.save()
