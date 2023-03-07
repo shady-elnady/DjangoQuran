@@ -41,6 +41,7 @@ ALLOWED_HOSTS = [
 # Application definition
 THIRD_LIBRARIES= [
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 
@@ -48,12 +49,12 @@ MY_APP= [
     "Quran",
     "Sora",
     "Aya",
-    "Bookmark",
     "Tafseer",
     "Qaria",
     "Audio",
     "Languages",
     "User",
+    "Bookmark",
     "API",
 ]
 
@@ -113,7 +114,7 @@ WSGI_APPLICATION = 'Config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'DataBase/Qurani.sqlite3',
+        'NAME': BASE_DIR / 'DataBase/QuranDB.sqlite3',
     }
 }
 
@@ -180,7 +181,9 @@ REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
+        'rest_framework.authentication.BasicAuthentication',
+
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 20,

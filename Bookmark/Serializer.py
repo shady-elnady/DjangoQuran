@@ -15,5 +15,6 @@ class BookMarkSerializer(HyperlinkedModelSerializer):
             "id",
             "aya",
             "created_time",
+            "last_updated",
             "slug",
         ]

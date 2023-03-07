@@ -1,16 +1,21 @@
 from django.contrib.auth.models import Group
 from rest_framework.serializers import (
     HyperlinkedModelSerializer,
+    ModelSerializer,
     EmailField,
     CharField,
+    ValidationError,
  )
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.validators import UniqueValidator
+from django.contrib.auth.password_validation import validate_password
 
 from .models import User, Profile
 from Languages.Serializer import LanguageSerializer
 
 
 class UserSerializer(HyperlinkedModelSerializer):
-
     class Meta:
         model = User
         fields = [
@@ -42,7 +47,6 @@ class UserSerializer(HyperlinkedModelSerializer):
     #     return user
 
 
-
 class MyProfileSerializer(HyperlinkedModelSerializer):
     user = UserSerializer(many= False)
     language = LanguageSerializer(many= False)
@@ -61,8 +65,3 @@ class MyProfileSerializer(HyperlinkedModelSerializer):
             "age",
             "slug",
         ]
-
-
-# class LogInSerialzer(HyperlinkedModelSerializer):
-#     email = EmailField()
-#     password =  CharField()
