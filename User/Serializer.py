@@ -1,15 +1,4 @@
-from django.contrib.auth.models import Group
-from rest_framework.serializers import (
-    HyperlinkedModelSerializer,
-    ModelSerializer,
-    EmailField,
-    CharField,
-    ValidationError,
- )
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.validators import UniqueValidator
-from django.contrib.auth.password_validation import validate_password
+from rest_framework.serializers import  HyperlinkedModelSerializer
 
 from .models import User, Profile
 from Languages.Serializer import LanguageSerializer
@@ -22,7 +11,6 @@ class UserSerializer(HyperlinkedModelSerializer):
             "url",
             "username",
             "email",
-            "Profile",
             "slug",
         ]
         extra_kwargs = {
@@ -53,6 +41,8 @@ class MyProfileSerializer(HyperlinkedModelSerializer):
             "birth_date",
             "gender",
             "language",
+            "created_date",
+            "last_updated",
             "age",
             "slug",
         ]

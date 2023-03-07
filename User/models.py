@@ -6,7 +6,10 @@ from django.core.validators import RegexValidator
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.db.models import Q
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
+from rest_framework.authtoken.models import Token
 from PIL import Image
 from datetime import date
 import calendar
@@ -86,9 +89,10 @@ class Profile(models.Model):
     
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
+        primary_key= True,
         on_delete=models.CASCADE,
-        related_name= _("Profile"),
-        to_field= "email",
+        # related_name= _("Profile"),
+        # to_field= "email",
         default= get_user_model(),
         verbose_name= _("User"),
     )
@@ -133,7 +137,6 @@ class Profile(models.Model):
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        default="en",
         verbose_name= _("Language"),
     )
     image= models.ImageField(
@@ -141,6 +144,18 @@ class Profile(models.Model):
         null= True,
         blank= True,
         verbose_name= _("Image"),
+    )
+    created_date= models.DateTimeField(
+        auto_now_add=True,
+        editable=False,
+        verbose_name=_("Created Date"),
+    )
+    last_updated= models.DateTimeField(
+        auto_now=True,
+        editable=False,
+        blank=True,
+        null=True,
+        verbose_name=_("Last Update"),
     )
     
     @property
@@ -186,3 +201,4 @@ class Profile(models.Model):
     class Meta:
         verbose_name = _("Profile")
         verbose_name_plural = _("Profiles")
+

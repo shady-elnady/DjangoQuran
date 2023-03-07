@@ -12,7 +12,6 @@ class BookMarkSerializer(HyperlinkedModelSerializer):
         model = BookMark
         fields = [
             "url",
-            "id",
             "aya",
             "created_time",
             "last_updated",
