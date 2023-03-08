@@ -37,7 +37,7 @@
 </head>
 <!-- body -->
 
-<body class="main-layout ">
+<body class="main-layout {% if request.resolver_match.view_name != 'Quran:Special' %}special-page{% endif %}">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#" /></div>
@@ -54,7 +54,7 @@
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="#"></a>
+                                    <a href="{% url 'Quran:Home' %}"><img src="{% static 'images/logo.png' %}" alt="#"></a>
                                 </div>
                             </div>
                         </div>
@@ -64,12 +64,24 @@
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li class="active"> <a href="index.html">Home</a> </li>
-                                        <li> <a href="about.html">About</a> </li>
-                                        <li><a href="brand.html">Brand</a></li>
-                                        <li><a href="special.html">Specials</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                        <li class="last">
+                                        <li
+                                            {% if request.resolver_match.view_name != 'Quran:Home' %}class="active"{% endif %}
+                                        > <a href="{% url 'Quran:Home' %}">Home</a> </li>
+                                        <li
+                                            {% if request.resolver_match.view_name != 'Quran:About' %}class="active"{% endif %}
+                                        > <a href="{% url 'Quran:About' %}">About</a> </li>
+                                        <li
+                                            {% if request.resolver_match.view_name != 'Quran:Brand' %}class="active"{% endif %}
+                                        ><a href="{% url 'Quran:Brand' %}">Brand</a></li>
+                                        <li
+                                            {% if request.resolver_match.view_name != 'Quran:Special' %}class="active"{% endif %}
+                                        ><a href="{% url 'Quran:Special' %}">Specials</a></li>
+                                        <li
+                                            {% if request.resolver_match.view_name != 'Quran:Contact' %}class="active"{% endif %}
+                                        ><a href="{% url 'Quran:Contact' %}">Contact Us</a></li>
+                                        <li 
+                                            class="last"
+                                        >
                                             <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="icon" /></a>
                                         </li>
                                     </ul>
