@@ -22,6 +22,7 @@ from rest_framework.authtoken import views
 from API.router import router
 
 urlpatterns = [
+    path('',include('Quran.urls', namespace="Quran")),
     path('admin/', admin.site.urls),
     path('',include('API.urls', namespace="API")),
     path('api-token-auth/', views.obtain_auth_token),

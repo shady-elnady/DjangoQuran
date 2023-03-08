@@ -10,7 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import os
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,19 +22,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-j-q)o^fm%t+buyb&ej07mp*#lnmm1$oqsy7qxc)1@6ejp56#0%'
+
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG')
 
 
 AUTH_USER_MODEL = "User.User"
 # for Access User Profile example(profile = request.user.get_profile())
 AUTH_PROFILE_MODULE = "User.Profile"
 
-
 ALLOWED_HOSTS = [
-    "*",
     "localhost",
     "127.0.0.1",
     "herokuapp.com",
@@ -42,6 +43,7 @@ ALLOWED_HOSTS = [
 THIRD_LIBRARIES= [
     'rest_framework',
     'rest_framework.authtoken',
+    'whitenoise.runserver_nostatic',
 ]
 
 
@@ -83,6 +85,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # for Langauge
     'django.middleware.locale.LocaleMiddleware',
+    # Add whitenoise middleware here
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Config.urls'
@@ -111,12 +115,20 @@ WSGI_APPLICATION = 'Config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'DataBase/QuranDB.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Quran',
+        'USER': 'postgres',
+        'PASSWORD': '12345',
+        'HOST': '127.0.0.1', 
+        'PORT': '5432',
     }
 }
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -152,23 +164,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = '/static/'
 
 MEDIA_URL = "media/"
 
-if DEBUG:
-    STATICFILES_DIRS = [
-        BASE_DIR / "static",
-        # "/var/www/example.com/static/",
-    ]
-    STATIC_ROOT = BASE_DIR / 'staticFiles'
-    MEDIA_ROOT = BASE_DIR / "media"
-else:
-    STATICFILES_DIRS = [
-        BASE_DIR / "static",
-    ]
-    STATIC_ROOT = BASE_DIR / "static"
-    MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Default primary key field type
