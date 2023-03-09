@@ -1,9 +1,9 @@
 from django import forms
-from django.contrib.auth.models import Group
 from django.contrib.auth.forms import (
-    ReadOnlyPasswordHashField, AuthenticationForm,
-    AuthenticationForm, UsernameField,
+    AuthenticationForm,
+    UsernameField,
     UserCreationForm,
+    ReadOnlyPasswordHashField,
 )
 
 from .models import User, Profile

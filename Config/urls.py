@@ -22,9 +22,10 @@ from rest_framework.authtoken import views
 from API.router import router
 
 urlpatterns = [
+    path("", include("User.urls", namespace= "User")), # Default Auth URL
     path('',include('Quran.urls', namespace="Quran")),
     path('admin/', admin.site.urls),
-    path('',include('API.urls', namespace="API")),
+    path('api/',include('API.urls', namespace="API")),
     path('api-token-auth/', views.obtain_auth_token),
     path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
