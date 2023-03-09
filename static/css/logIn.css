@@ -119,7 +119,7 @@ Log in form
   border: 2px solid red;
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.2), inset 0 0 5px rgba(255, 0, 0, 0.1), 0 2px 0 #000;
 }
-.stark-login button {
+.stark-login #submit {
   animation: input-entry 3s ease-in;
   background: #222;
   background: linear-gradient(#333333, #222222);
@@ -142,15 +142,15 @@ Log in form
   width: 400px;
   transition: 1s all;
 }
-.stark-login button:hover,
-.stark-login button:focus {
+.stark-login #submit:hover,
+.stark-login #submit:focus {
   background: #0C6125;
   background: linear-gradient(#393939, #292929);
   color: #00fffc;
   outline: none;
   transition: 1s all;
 }
-.stark-login button:active {
+.stark-login #submit:active {
   background: #292929;
   background: linear-gradient(#393939, #292929);
   box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;

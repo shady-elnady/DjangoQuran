@@ -7,7 +7,7 @@ app_name = "Quran"
 
 
 urlpatterns = [
-  path('home',home, name= "Home"),
+  path('',home, name= "Home"),
   path('about',about, name= "About"),
   path('brand',brand, name= "Brand"),
   path('contact',contact, name= "Contact"),

@@ -65,19 +65,19 @@
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
                                         <li
-                                            {% if request.resolver_match.view_name != 'Quran:Home' %}class="active"{% endif %}
+                                            {% if request.resolver_match.view_name == 'Quran:Home' %}class="active"{% endif %}
                                         > <a href="{% url 'Quran:Home' %}">Home</a> </li>
                                         <li
-                                            {% if request.resolver_match.view_name != 'Quran:About' %}class="active"{% endif %}
+                                            {% if request.resolver_match.view_name == 'Quran:About' %}class="active"{% endif %}
                                         > <a href="{% url 'Quran:About' %}">About</a> </li>
                                         <li
-                                            {% if request.resolver_match.view_name != 'Quran:Brand' %}class="active"{% endif %}
+                                            {% if request.resolver_match.view_name == 'Quran:Brand' %}class="active"{% endif %}
                                         ><a href="{% url 'Quran:Brand' %}">Brand</a></li>
                                         <li
-                                            {% if request.resolver_match.view_name != 'Quran:Special' %}class="active"{% endif %}
+                                            {% if request.resolver_match.view_name == 'Quran:Special' %}class="active"{% endif %}
                                         ><a href="{% url 'Quran:Special' %}">Specials</a></li>
                                         <li
-                                            {% if request.resolver_match.view_name != 'Quran:Contact' %}class="active"{% endif %}
+                                            {% if request.resolver_match.view_name == 'Quran:Contact' %}class="active"{% endif %}
                                         ><a href="{% url 'Quran:Contact' %}">Contact Us</a></li>
                                         <li 
                                             class="last"
