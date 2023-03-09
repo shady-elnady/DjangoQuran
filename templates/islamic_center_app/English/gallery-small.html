@@ -1,0 +1,171 @@
+{% extends '../base.html' %} {% load static %} {% block Content %}
+
+<!--INNER BANNER-->
+<div id="inner-banner">
+  <div class="container">
+    <h1>our gallery</h1>
+    <ol class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li class="active">Gallery Small Column</li>
+    </ol>
+  </div>
+</div>
+<!--INNER BANNER-->
+<div id="main">
+  <!--GALLERY START-->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="row gallery">
+        <div class="col-md-4 col-sm-4">
+          <div class="frame">
+            <img
+              src="{% static 'images/gallery/gallery-col-3-img-1.jpg' %}"
+              alt="img"
+            />
+            <a
+              href="{% static 'images/gallery/gallery-col-3-img-1.jpg' %}"
+              class="link"
+              data-rel="prettyPhoto[gallery1]"
+              ><i class="fa fa-image" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="frame">
+            <img
+              src="{% static 'images/gallery/gallery-col-3-img-2.jpg' %}"
+              alt="img"
+            />
+            <a
+              href="{% static 'images/gallery/gallery-col-3-img-2.jpg' %}"
+              class="link"
+              data-rel="prettyPhoto[gallery1]"
+              ><i class="fa fa-image" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="frame">
+            <img
+              src="{% static 'images/gallery/gallery-col-3-img-3.jpg' %}"
+              alt="img"
+            />
+            <a
+              href="{% static 'images/gallery/gallery-col-3-img-3.jpg' %}"
+              class="link"
+              data-rel="prettyPhoto[gallery1]"
+              ><i class="fa fa-image" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="frame">
+            <img
+              src="{% static 'images/gallery/gallery-col-3-img-4.jpg' %}"
+              alt="img"
+            />
+            <a
+              href="{% static 'images/gallery/gallery-col-3-img-4.jpg' %}"
+              class="link"
+              data-rel="prettyPhoto[gallery1]"
+              ><i class="fa fa-image" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="frame">
+            <img
+              src="{% static 'images/gallery/gallery-col-3-img-5.jpg' %}"
+              alt="img"
+            />
+            <a
+              href="{% static 'images/gallery/gallery-col-3-img-5.jpg' %}"
+              class="link"
+              data-rel="prettyPhoto[gallery1]"
+              ><i class="fa fa-image" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="frame">
+            <img
+              src="{% static 'images/gallery/gallery-col-3-img-6.jpg' %}"
+              alt="img"
+            />
+            <a
+              href="{% static 'images/gallery/gallery-col-3-img-6.jpg' %}"
+              class="link"
+              data-rel="prettyPhoto[gallery1]"
+              ><i class="fa fa-image" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="frame">
+            <img
+              src="{% static 'images/gallery/gallery-col-3-img-7.jpg' %}"
+              alt="img"
+            />
+            <a
+              href="{% static 'images/gallery/gallery-col-3-img-7.jpg' %}"
+              class="link"
+              data-rel="prettyPhoto[gallery1]"
+              ><i class="fa fa-image" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="frame">
+            <img
+              src="{% static 'images/gallery/gallery-col-3-img-8.jpg' %}"
+              alt="img"
+            />
+            <a
+              href="{% static 'images/gallery/gallery-col-3-img-8.jpg' %}"
+              class="link"
+              data-rel="prettyPhoto[gallery1]"
+              ><i class="fa fa-image" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="frame">
+            <img
+              src="{% static 'images/gallery/gallery-col-3-img-9.jpg' %}"
+              alt="img"
+            />
+            <a
+              href="{% static 'images/gallery/gallery-col-3-img-9.jpg' %}"
+              class="link"
+              data-rel="prettyPhoto[gallery1]"
+              ><i class="fa fa-image" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!--PAGINATION START-->
+      <div class="pagination-col">
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">Prev</span>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--PAGINATION END-->
+    </div>
+  </section>
+  <!--GALLERY END-->
+</div>
+{% endblock Content %}

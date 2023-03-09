@@ -1,0 +1,363 @@
+{% extends '../base.html' %} {% load static %} {% block Content %}
+
+<!--INNER BANNER-->
+<div id="inner-banner">
+  <div class="container">
+    <h1>Islamic Products shop</h1>
+    <ol class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li class="active">Shop Detail</li>
+    </ol>
+  </div>
+</div>
+<!--INNER BANNER-->
+
+<div id="main">
+  <!--PRODUCT DETAIL START-->
+  <section class="product-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <ul class="bxslider gallery">
+            <li>
+              <img
+                src="{% static 'images/product/product-img-big-1.jpg' %}"
+                alt="img"
+              />
+            </li>
+            <li>
+              <img
+                src="{% static 'images/product/product-img-big-2.jpg' %}"
+                alt="img"
+              />
+            </li>
+            <li>
+              <img
+                src="{% static 'images/product/product-img-big-3.jpg' %}"
+                alt="img"
+              />
+            </li>
+          </ul>
+          <div id="bx-pager">
+            <a data-slide-index="0" href=""
+              ><img
+                src="{% static 'images/product/product-small-img-1.jpg' %}"
+                alt="img"
+            /></a>
+            <a data-slide-index="1" href=""
+              ><img
+                src="{% static 'images/product/product-small-img-2.jpg' %}"
+                alt="img"
+            /></a>
+            <a data-slide-index="2" href=""
+              ><img
+                src="{% static 'images/product/product-small-img-3.jpg' %}"
+                alt="img"
+            /></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="text-box">
+            <h3><a href="#">Digital Quran</a></h3>
+            <div class="btn-row">
+              <span class="reviews">12 Customer Reviews</span>
+              <ul class="product-rating">
+                <li>
+                  <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-star-o" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-row">
+              <span class="cut-price">$65.00</span>
+              <span class="price">$75.00</span>
+            </div>
+            <p>
+              Etiam ipsum augue, cursus a interdum ac, ornare quis sem.
+              Pellentesque a justo accumsan, convallis sem eget, euismod mauris.
+              Nunc at tortor sapien. Integer varius metus lacus, et fringilla
+              nibh vulputate in. Ut et ultricies ante, ut volutpat est. Morbi
+              tempus nulla in pharetra accumsan nullam est augue.
+            </p>
+            <p>
+              Mauris eu rhoncus nulla, vitae laoreet est. Phasellus vehicula
+              lectus sed odio vehicula, at placerat tortor malesuada. Vestibulum
+              porta pellentesque bibendum.
+            </p>
+            <ul class="list">
+              <li>
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>Ut et
+                ultricies ante, ut volutpat est.
+              </li>
+              <li>
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>Pharetra
+                accumsan nullam est augue.
+              </li>
+              <li>
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>Eun
+                fringilla nibh vulputate in.
+              </li>
+              <li>
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>Nunc at
+                tortor sapien. Integer varius metus lacus
+              </li>
+            </ul>
+            <div class="detail-row">
+              <ul>
+                <li>Client: <b>Abaya Collection</b></li>
+                <li>Design &amp; Directions: <b>Rameez</b></li>
+                <li>Assignment: <b> Brand Identity UI Kit</b></li>
+                <li>Dated: <b> Friday, 12 August, 2021</b></li>
+              </ul>
+            </div>
+            <div class="product-quantity">
+              <div class="input-append spinner" data-trigger="spinner">
+                <span class="spin-down" data-spin="down"
+                  ><i class="fa fa-minus"></i
+                ></span>
+                <input type="text" value="0" data-rule="quantity" />
+                <span class="spin-up" data-spin="up"
+                  ><i class="fa fa-plus"></i
+                ></span>
+              </div>
+            </div>
+            <a href="#" class="btn-style-1">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-tab-col">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#home" aria-controls="home" role="tab" data-toggle="tab"
+              >Description</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="#profile"
+              aria-controls="profile"
+              role="tab"
+              data-toggle="tab"
+              >Reviews</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="text-box">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisici elit, sed
+                eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                Inmensae subtilitatis, obscuris et malesuada fames. Morbi
+                fringilla convallis sapien, id pulvinar odio volutpat. Ut enim
+                ad minim veniam, quis nostrud exercitation. Quisque placerat
+                facilisis egestas cillum dolore. Lorem ipsum dolor sit amet,
+                consectetur adipisici elit. Lorem ipsum dolor sit amet,
+                consectetur adipisici elit, sed eiusmod tempor incidunt ut
+                labore et dolore magna aliqua. Inmensae subtilitatis, obscuris
+                et malesuada fames. Morbi fringilla convallis sapien, id
+                pulvinar odio volutpat.
+              </p>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="profile">
+            <div class="text-box">
+              <div class="thumb">
+                <img src="{% static 'images/comment-img-2.jpg' %}" alt="img" />
+              </div>
+              <div class="text-col">
+                <h4>Rameez</h4>
+                <div class="btn-row">
+                  <span class="date">Friday 12 September, 2021</span>
+                  <ul class="reviews-rating">
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-star" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-star" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-star" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-star" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-star-o" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  Curabitur fermentum, lorem in rhoncus sodales, augue neque
+                  hendrerit metus, vel pharetra sem sapien non elit. Nulla
+                  euismod orci eget elementum ornare. Etiam cursus nibh purus,
+                  vitae sollicitudin metus porttitor eget. Sed eget tempor sem,
+                  in maximus magna. Vivamus quis dignissim sapien, et
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-section">
+        <h2>Related Products</h2>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="product-box">
+              <div class="frame">
+                <a href="#"
+                  ><img
+                    src="{% static 'images/product/product-img-1.jpg' %}"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="text-box">
+                <h5><a href="#">Digital Quran</a></h5>
+                <strong class="price">$68.00</strong>
+                <strong class="cut-price">$48.00</strong>
+                <div class="cart-row">
+                  <div class="cart-box">
+                    <a href="#"
+                      ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="like-box">
+                    <a href="#"
+                      ><i class="fa fa-heart" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="checkout-box">
+                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-box">
+              <div class="frame">
+                <a href="#"
+                  ><img
+                    src="{% static 'images/product/product-img-2.jpg' %}"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="text-box">
+                <h5><a href="#">Ism Ring</a></h5>
+                <strong class="price">$90.00</strong>
+                <strong class="cut-price">$115.00</strong>
+                <div class="cart-row">
+                  <div class="cart-box">
+                    <a href="#"
+                      ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="like-box">
+                    <a href="#"
+                      ><i class="fa fa-heart" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="checkout-box">
+                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-box">
+              <div class="frame">
+                <a href="#"
+                  ><img
+                    src="{% static 'images/product/product-img-3.jpg' %}"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="text-box">
+                <h5><a href="#">islamic capst</a></h5>
+                <strong class="price">$10.00</strong>
+                <strong class="cut-price">$12.00</strong>
+                <div class="cart-row">
+                  <div class="cart-box">
+                    <a href="#"
+                      ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="like-box">
+                    <a href="#"
+                      ><i class="fa fa-heart" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="checkout-box">
+                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-box">
+              <div class="frame">
+                <a href="#"
+                  ><img
+                    src="{% static 'images/product/product-img-4.jpg' %}"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="text-box">
+                <h5><a href="#">Paternostering</a></h5>
+                <strong class="price">$15.00</strong>
+                <strong class="cut-price">$25.00</strong>
+                <div class="cart-row">
+                  <div class="cart-box">
+                    <a href="#"
+                      ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="like-box">
+                    <a href="#"
+                      ><i class="fa fa-heart" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="checkout-box">
+                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--PRODUCT DETAIL END-->
+</div>
+{% endblock Content %} {% block Scripts %}
+<!--Bxslider JS-->
+<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+<!--PRODUCT Quantity-->
+<script src="{% static 'js/jquery.spinner.js' %}"></script>
+{% endblock Scripts %}

@@ -1,0 +1,211 @@
+{% extends '../base.html' %} {% load static %} {% block Content %}
+
+<!--INNER BANNER-->
+<div id="inner-banner">
+  <div class="container">
+    <h1>Donation</h1>
+    <ol class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li class="active">Donation</li>
+    </ol>
+  </div>
+</div>
+<!--INNER BANNER-->
+<div id="main">
+  <!--DONATION SECTION START-->
+  <section class="donation-section">
+    <div class="container">
+      <div id="give-form-370-wrap" class="give-form-wrap give-display-onpage">
+        <h2 class="give-form-title">Donation Form</h2>
+        <form
+          id="give-form-370"
+          class="give-form give-form-370 give-form-type-multi"
+          action="#"
+        >
+          <input name="give-price-id" value="0" type="hidden" />
+          <label class="give-hidden">Donation Amount:</label>
+          <div class="set-price give-donation-amount form-row-wide">
+            <span class="give-currency-symbol give-currency-position-before"
+              >$</span
+            >
+            <span id="give-amount-text" class="give-text-input give-amount-top"
+              >50</span
+            >
+          </div>
+          <ul
+            id="give-donation-level-radio-list"
+            class="give-donation-levels-wrap"
+          >
+            <li>
+              <input
+                data-price-id="0"
+                class="give-radio-input give-radio-input-level give-radio-level-0 give-default-level"
+                name="give-radio-donation-level"
+                id="give-radio-level-0"
+                checked="checked"
+                value="50"
+                type="radio"
+              />
+              <label for="give-radio-level-0">$50</label>
+            </li>
+            <li>
+              <input
+                data-price-id="1"
+                class="give-radio-input give-radio-input-level give-radio-level-1"
+                name="give-radio-donation-level"
+                id="give-radio-level-1"
+                value="100"
+                type="radio"
+              />
+              <label for="give-radio-level-1">$100</label>
+            </li>
+            <li>
+              <input
+                data-price-id="2"
+                class="give-radio-input give-radio-input-level give-radio-level-2"
+                name="give-radio-donation-level"
+                id="give-radio-level-2"
+                value="150"
+                type="radio"
+              />
+              <label for="give-radio-level-2">$150</label>
+            </li>
+            <li>
+              <input
+                data-price-id="3"
+                class="give-radio-input give-radio-input-level give-radio-level-3"
+                name="give-radio-donation-level"
+                id="give-radio-level-3"
+                value="200"
+                type="radio"
+              />
+              <label for="give-radio-level-3">$200</label>
+            </li>
+            <li>
+              <input
+                data-price-id="4"
+                class="give-radio-input give-radio-input-level give-radio-level-4"
+                name="give-radio-donation-level"
+                id="give-radio-level-4"
+                value="250"
+                type="radio"
+              />
+              <label for="give-radio-level-4">$250</label>
+            </li>
+            <li>
+              <input
+                data-price-id="5"
+                class="give-radio-input give-radio-input-level give-radio-level-5"
+                name="give-radio-donation-level"
+                id="give-radio-level-5"
+                value="300"
+                type="radio"
+              />
+              <label for="give-radio-level-5">$300</label>
+            </li>
+          </ul>
+          <fieldset id="give-payment-mode-select" style="display: none">
+            <legend class="give-payment-mode-label">
+              Select Payment Method
+              <span class="give-loading-text" style="display: none"
+                ><span class="give-loading-animation"></span>
+              </span>
+            </legend>
+            <div id="give-payment-mode-wrap">
+              <ul id="give-gateway-radio-list"></ul>
+            </div>
+          </fieldset>
+          <div id="give_purchase_form_wrap">
+            <fieldset id="give_checkout_user_info">
+              <legend>Personal Info</legend>
+              <p
+                id="give-first-name-wrap"
+                class="form-row form-row-first form-row-responsive"
+              >
+                <label class="give-label" for="give-first">
+                  First Name <span class="give-required-indicator">*</span>
+                  <span
+                    class="give-tooltip give-icon give-icon-question"
+                    data-tooltip="We will use this to personalize your account experience."
+                    data-hasqtip="350"
+                  ></span>
+                </label>
+                <input
+                  class="give-input required"
+                  name="give_first"
+                  placeholder="First Name"
+                  id="give-first"
+                  value=""
+                  required
+                  aria-required="true"
+                  type="text"
+                />
+              </p>
+              <p
+                id="give-last-name-wrap"
+                class="form-row form-row-last form-row-responsive"
+              >
+                <label class="give-label" for="give-last">
+                  Last Name
+                  <span
+                    class="give-tooltip give-icon give-icon-question"
+                    data-tooltip="We will use this as well to personalize your account experience."
+                    data-hasqtip="354"
+                  ></span>
+                </label>
+                <input
+                  class="give-input"
+                  name="give_last"
+                  id="give-last"
+                  placeholder="Last Name"
+                  value=""
+                  type="text"
+                />
+              </p>
+              <p id="give-email-wrap" class="form-row form-row-wide">
+                <label class="give-label" for="give-email">
+                  Email Address <span class="give-required-indicator">*</span>
+                  <span
+                    class="give-tooltip give-icon give-icon-question"
+                    data-tooltip="We will send the donation receipt to this address."
+                    data-hasqtip="359"
+                  ></span>
+                </label>
+                <input
+                  class="give-input required"
+                  name="give_email"
+                  placeholder="Email Address"
+                  id="give-email"
+                  value=""
+                  required
+                  aria-required="true"
+                  type="email"
+                />
+              </p>
+            </fieldset>
+            <fieldset id="give_purchase_submit">
+              <p id="give-final-total-wrap" class="form-wrap">
+                <span class="give-donation-total-label">Donation Total:</span>
+                <span class="give-final-total-amount" data-total="50">$50</span>
+              </p>
+              <input name="give_action" value="purchase" type="hidden" />
+              <input name="give-gateway" value="paypal" type="hidden" />
+              <div class="give-submit-button-wrap give-clearfix">
+                <input
+                  class="give-submit give-btn"
+                  id="give-purchase-button"
+                  name="give-purchase"
+                  value="Donate Now"
+                  type="submit"
+                />
+                <span class="give-loading-animation"></span>
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--DONATION SECTION  END-->
+</div>
+{% endblock Content %}

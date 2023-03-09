@@ -1,0 +1,1140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Salat - Islamic Center Responsive HTML 5 Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Css Fils-->
+    <link
+      href="{% static 'css/style.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'css/bootstrap.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="{% static 'css/rtl.css' %}" rel="stylesheet" type="text/css" />
+    <link
+      href="{% static 'css/responsive.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'css/color.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    {% comment %}
+    <link
+      href="{% static 'css/font-awesome.min.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    {% endcomment %}
+    <link
+      href="{% static 'css/owl.carousel.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'css/audioplayer.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    {% comment %}
+    <!-- Our project just needs Font Awesome Free's Solid and Brand files -->
+    <link
+      href="{% static 'fontawesomefree/css/fontawesome.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/brands.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/solid.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    {% endcomment %} {% comment %}
+    <!-- Our project needs Font Awesome Pro's Classic Solid, Sharp Solid, Sharp Regular, and Brand files -->
+    <link
+      href="{% static 'fontawesomepro/css/fontawesome.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomepro/css/solid.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomepro/css/sharp-solid.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomepro/css/sharp-regular.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomepro/css/brands.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    {% endcomment %}
+
+    <!-- Our project needs Font Awesome Pro's Classic Solid, Sharp Solid, Sharp Regular, and Brand files -->
+    <script src="{% static 'fontawesomepro/js/fontawesome.js' %}"></script>
+    <script src="{% static 'fontawesomepro/js/solid.js' %}"></script>
+    <script src="{% static 'fontawesomepro/js/sharp-solid.js' %}"></script>
+    <script src="{% static 'fontawesomepro/js/sharp-regular.js' %}"></script>
+    <script src="{% static 'fontawesomepro/js/brands.js' %}"></script>
+
+    {% comment %}
+    <!-- One file includes all the Font Awesome Pro icons and utilities -->
+    <script src="{% static 'fontawesomepro/js/all.min.js' %}"></script>
+    {% endcomment %}
+  </head>
+
+  <body>
+    <!--Wrapper-->
+    <div id="wrapper">
+      <!--Header-->
+      <header id="header">
+        <div class="container">
+          <a href="{% url 'Quran:Home' %}" class="logo"
+            ><img src="{% static 'images/logo.png' %}" alt="logo"
+          /></a>
+          <div class="header-right">
+            <div class="header-right-topbar">
+              <div class="search-holder">
+                <button id="trigger-overlay" type="button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </div>
+              <ul class="top-menu">
+                <li><a href="donation.html">تبرع</a></li>
+                <li>
+                  <a
+                    href="#"
+                    id="dropdownMenu1"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                    >أذان</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><strong class="title">25 جمعة الاخره.</strong></li>
+                    <li><span>1438 h</span></li>
+                    <li><b>مارش 25،2021</b></li>
+                    <li>
+                      <div class="head">
+                        <span class="azan">صلى</span>
+                        <span class="time">زمن</span>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><em class="azan">الفجر</em
+                        ><strong class="time">06:04 صباحا</strong></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><em class="azan">شروق الشمس</em
+                        ><strong class="time">07:34 صباحا</strong></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><em class="azan">الظهر</em
+                        ><strong class="time">01:45 صباحا</strong></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><em class="azan">العصر</em
+                        ><strong class="time">05:14 مساء</strong></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><em class="azan">المغرب</em
+                        ><strong class="time">07:55 مساء</strong></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><em class="azan">العشاء</em
+                        ><strong class="time">09:20 مساء</strong></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><em class="azan">جمعة تول مبارك</em
+                        ><strong class="time">01:30 مساء</strong></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">الإقامة</a></li>
+              </ul>
+            </div>
+            <div class="navigation-row">
+              <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                  <button
+                    type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#navbar"
+                    aria-expanded="false"
+                    aria-controls="navbar"
+                  >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav" id="nav">
+                    <li 
+                    {% if request.resolver_match.view_name == 'Quran:Home' %}class="active"{% endif %}
+                    >
+                      <a href="{% url 'Quran:Home' %}">الصفحة الرئيسية</a>
+                    </li>
+                    <li
+                    {% if request.resolver_match.view_name == 'Quran:About' %}class="active"{% endif %}
+                    ><a href="{% url 'Quran:About' %}">حول</a></li>
+                    <li>
+                      <a href="#"
+                        >تمويل الجماعي<i
+                          class="fa fa-caret-down"
+                          aria-hidden="true"
+                        ></i
+                      ></a>
+                      <ul>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:CrowdFunding' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:CrowdFunding' %}">تمويل الجماعي</a></li>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:CrowdFundingDetail' %}class="active"{% endif %}
+                        >
+                          <a href="{% url 'Quran:CrowdFundingDetail' %}"
+                            >تمويل الجماعي التفاصيل</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >أحداث<i class="fa fa-caret-down" aria-hidden="true"></i
+                      ></a>
+                      <ul>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:Events' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:Events' %}">أحداث</a></li>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:EventDetail' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:EventDetail' %}">تفاصيل الحدث</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">
+                        متجر<i class="fa fa-caret-down" aria-hidden="true"></i
+                      ></a>
+                      <ul>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:Product' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:Product' %}">متجر</a></li>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:ProductDetail' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:ProductDetail' %}">متجر التفاصيل</a></li>
+                      </ul>
+                    </li>
+                    <li
+                    {% if request.resolver_match.view_name == 'Quran:Scolars' %}class="active"{% endif %}
+                    ><a href="{% url 'Quran:Scolars' %}">العلماء</a></li>
+                    <li>
+                      <a href="#"
+                        >مدونة<i class="fa fa-caret-down" aria-hidden="true"></i
+                      ></a>
+                      <ul>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:Blog' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:Blog' %}">مدونة</a></li>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:BlogDetail' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:BlogDetail' %}">تفاصيل المدونة</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >صفحات<i class="fa fa-caret-down" aria-hidden="true"></i
+                      ></a>
+                      <ul>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:Donation' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:Donation' %}">هبة</a></li>
+                        <li>
+                          <a href="#">صالة عرض</a>
+                          <ul>
+                            <li
+                            {% if request.resolver_match.view_name == 'Quran:GalleryMedium' %}class="active"{% endif %}
+                            >
+                              <a href="{% url 'Quran:GalleryMedium' %}">المعرض متوسط</a>
+                            </li>
+                            <li
+                            {% if request.resolver_match.view_name == 'Quran:GallerySmall' %}class="active"{% endif %}
+                            ><a href="{% url 'Quran:GallerySmall' %}">معرض صغير</a></li>
+                          </ul>
+                        </li>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:ComingSoon' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:ComingSoon' %}">قريبا</a></li>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:ErrorPage' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:ErrorPage' %}">404</a></li>
+                        <li
+                        {% if request.resolver_match.view_name == 'Quran:SearchResult' %}class="active"{% endif %}
+                        ><a href="{% url 'Quran:SearchResult' %}">نتيجة البحث</a></li>
+                      </ul>
+                    </li>
+                    <li
+                    {% if request.resolver_match.view_name == 'Quran:Contact' %}class="active"{% endif %}
+                    ><a href="{% url 'Quran:Contact' %}">اتصل</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!--Search Bar-->
+        <div class="overlay overlay-contentscale">
+          <button type="button" class="overlay-close">Close</button>
+          <div class="search-inner">
+            <form method="get">
+              <input type="text" placeholder="Search....." required />
+              <button class="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <!--Search Bar Inner-->
+        </div>
+        <!--Search Bar-->
+      </header>
+      <!--Header-->
+
+      <!--Banner-->
+      <div id="banner">
+        <div class="owl-carousel" id="home-slider">
+          <div class="item">
+            <div class="caption">
+              <div class="container">
+                <span
+                  ><img
+                    src="{% static 'images/kalma-text-img.png' %}"
+                    alt="kalma"
+                /></span>
+                <strong class="title">أس-سالامو ألايكوم</strong>
+                <h1>الله وملائكته يرسلون البركات <span>على النبي</span></h1>
+                <p>
+                  يا أيها الذين آمنوا! إرسال بركاته عليه. و تحية له بكل
+                  الاحترام.
+                </p>
+                <div class="btn-row">
+                  <a href="about.html" class="btn-style-1">اقرأ أكثر</a>
+                </div>
+              </div>
+            </div>
+            <img src="{% static 'images/banner-img-1.jpg' %}" alt="banner" />
+          </div>
+          <div class="item">
+            <div class="caption">
+              <div class="container">
+                <span
+                  ><img
+                    src="{% static 'images/kalma-text-img.png' %}"
+                    alt="kalma"
+                /></span>
+                <strong class="title">أس-سالامو ألايكوم</strong>
+                <h1>الله وملائكته يرسلون البركات <span>على النبي</span></h1>
+                <p>
+                  يا أيها الذين آمنوا! إرسال بركاته عليه. و تحية له بكل
+                  الاحترام.
+                </p>
+                <div class="btn-row">
+                  <a href="{% url 'Quran:About' %}" class="btn-style-1">اقرأ أكثر</a>
+                </div>
+              </div>
+            </div>
+            <img src="{% static 'images/banner-img-1.jpg' %}" alt="banner" />
+          </div>
+        </div>
+      </div>
+      <!--Banner-->
+
+      <!--Mian Content-->
+      <div id="main">
+        <!--History Section-->
+        <section class="history-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="frame">
+                  <img
+                    src="{% static 'images/history-img.png' %}"
+                    alt="history"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="text-box">
+                  <div class="heading-left">
+                    <strong class="title">مرحبا بكم في صلاة</strong>
+                    <h2>تاريخ الإسلام</h2>
+                  </div>
+                  <b>بسم الله الرحمن الرحيم </b>
+                  <p>
+                    كان للإسلام تأثير هائل على تاريخ العالم وكذلك في الوقت
+                    الحاضر، إينيان سوليسليتودين، لوريم كويس بيبندوم أوكتور، نيسي
+                    إليت ثوسكات إيبسوم، نيك ساجيتيس سيم نيبه إد إليت. دويس سيد
+                    أوديو سيت أميت نيب فولبوتات كورسوس a سيت أميت موريس.
+                  </p>
+                  <p>
+                    المجتمع الأكبر يتحول إلينا كمصدر موثوق للمعلومات الدقيقة عن
+                    الإسلام والمسلمين. أبوابنا مفتوحة لجيراننا.
+                  </p>
+                  <a href="about.html" class="btn-style-1">اقرأ أكثر</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--History Section-->
+
+        <!--Our Vision-->
+        <section class="our-vision">
+          <div class="container">
+            <div class="heading-center">
+              <strong class="title">المقدمة</strong>
+              <h2>رؤيتنا</h2>
+              <div class="text-holder">
+                <p>
+                  هذا هو الإصدار فوتوشوب أبجد هوز. بروين غرافيدا نيبه فيل فيليت
+                  أوكتور إينيان سوليسليتودين.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <div class="vision-box">
+                  <span class="icon"
+                    ><i class="fa fa-moon-o" aria-hidden="true"></i
+                  ></span>
+                  <h3><a href="crowd-funding.html">إيمان</a></h3>
+                  <p>
+                    موربي سيمبر، دوي سوداليس أليكيت إمبرديت، لاكوس ليغولا كونغ
+                    نيك، كيس بريتيوم ليكتوس ليبيرو إد.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="vision-box">
+                  <span class="icon"
+                    ><i class="fa fa-graduation-cap" aria-hidden="true"></i
+                  ></span>
+                  <h3><a href="crowd-funding.html">التعليم</a></h3>
+                  <p>
+                    هذا هو الإصدار فوتوشوب أبجد هوز. بروين غرافيدا نيبه فيل
+                    فيليت أوكتور أليكيت. إينيان سوليسليتودين،
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="vision-box">
+                  <span class="icon"
+                    ><i class="fa fa-handshake-o" aria-hidden="true"></i
+                  ></span>
+                  <h3><a href="crowd-funding.html">خدمات</a></h3>
+                  <p>
+                    موربي سيمبر، دوي سوداليس أليكيت إمبرديت، لاكوس ليغولا كونغ
+                    نيك، كيس بريتيوم ليكتوس ليبيرو إد.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Our Vision-->
+
+        <!--Parallax Section-->
+        <section class="parallax-section">
+          <div class="container">
+            <div class="right-box">
+              <img src="{% static 'images/parallax-text.png' %}" alt="text" />
+              <strong class="title">ثم أي من فضل ربك سوف تنكر؟</strong>
+              <a href="#">{كوران: 55 13}</a>
+            </div>
+          </div>
+        </section>
+        <!--Parallax Section-->
+
+        <!--Event Section-->
+        <section class="event-section">
+          <div class="container">
+            <div class="heading-center">
+              <strong class="title">أحداث</strong>
+              <h2>حدثنا القادم</h2>
+              <div class="text-holder">
+                <p>
+                  هذا هو الإصدار فوتوشوب أبجد هوز. بروين غرافيدا نيبه فيل فيليت
+                  أوكتور . إينيان سوليسليتودين.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="event-box">
+                  <img
+                    src="{% static 'images/event-img-1.jpg' %}"
+                    alt="event"
+                  />
+                  <div class="caption">
+                    <strong class="title"
+                      >من الساعة 07:30 صباحا وحتى الساعة 12:00 ظهرا</strong
+                    >
+                    <h3><a href="event-detail.html">الإسلامية</a></h3>
+                  </div>
+                  <div class="countdown-box">
+                    <div class="countdown236"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="event-box">
+                  <img
+                    src="{% static 'images/event-img-2.jpg' %}"
+                    alt="event"
+                  />
+                  <div class="caption">
+                    <strong class="title"
+                      >من الساعة 10 صباحا حتى الساعة 12 ظهرا</strong
+                    >
+                    <h3>
+                      <a href="event-detail.html"
+                        >رياض أوس-ساليهين مع الشيخ حسام موسى</a
+                      >
+                    </h3>
+                  </div>
+                  <div class="countdown-box">
+                    <div class="countdown236"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Event Section-->
+
+        <section class="pillars-islam-section">
+          <div class="container">
+            <h2>أركان الإسلام</h2>
+            <div class="pillar-box">
+              <div class="shape-1">
+                <img src="{% static 'images/features-icon-3.png' %}" alt="" />
+              </div>
+              <h3>كالما</h3>
+            </div>
+            <div class="pillar-box">
+              <div class="shape-1">
+                <img src="{% static 'images/features-icon-1.png' %}" alt="" />
+              </div>
+              <h3>صلاة</h3>
+            </div>
+            <div class="pillar-box">
+              <div class="shape-1">
+                <img src="{% static 'images/features-icon-4.png' %}" alt="" />
+              </div>
+              <h3>زكاة</h3>
+            </div>
+            <div class="pillar-box">
+              <div class="shape-1">
+                <img src="{% static 'images/features-icon-5.png' %}" alt="" />
+              </div>
+              <h3>صيام</h3>
+            </div>
+            <div class="pillar-box">
+              <div class="shape-1">
+                <img src="{% static 'images/features-icon-6.png' %}" alt="" />
+              </div>
+              <h3>الحج</h3>
+            </div>
+          </div>
+        </section>
+
+        <!--Gallery Style 1-->
+        <section class="gallery-style-1">
+          <div class="container">
+            <div class="heading-center">
+              <strong class="title">سلات، بهجة</strong>
+              <h2>صلاة الإسلامية معرض الصور</h2>
+              <div class="text-holder">
+                <p>
+                  هذا هو الإصدار فوتوشوب أبجد هوز. بروين غرافيدا نيبه فيل فيليت
+                  أوكتور إينيان سوليسليتودين.
+                </p>
+              </div>
+            </div>
+            <div class="row gallery">
+              <div class="col-md-6 col-sm-6">
+                <div class="frame height-1">
+                  <img
+                    src="{% static 'images/gallery-img-1.jpg' %}"
+                    alt="gallery"
+                  />
+                  <div class="caption">
+                    <h3><a href="#">التربية الإسلامية</a></h3>
+                    <a
+                      href="{% static 'images/gallery-img-1.jpg' %}"
+                      class="zoom"
+                      data-rel="prettyPhoto[gallery1]"
+                      ><i class="fa fa-expand" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="frame height-2">
+                  <img
+                    src="{% static 'images/gallery-img-2.jpg' %}"
+                    alt="gallery"
+                  />
+                  <div class="caption">
+                    <h3><a href="#">التربية الإسلامية</a></h3>
+                    <a
+                      href="{% static 'images/gallery-img-2.jpg' %}"
+                      class="zoom"
+                      data-rel="prettyPhoto[gallery1]"
+                      ><i class="fa fa-expand" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="frame">
+                  <img
+                    src="{% static 'images/gallery-img-3.jpg' %}"
+                    alt="gallery"
+                  />
+                  <div class="caption">
+                    <h3><a href="#">التربية الإسلامية</a></h3>
+                    <a
+                      href="{% static 'images/gallery-img-3.jpg' %}"
+                      class="zoom"
+                      data-rel="prettyPhoto[gallery1]"
+                      ><i class="fa fa-expand" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="frame height-1">
+                  <img
+                    src="{% static 'images/gallery-img-4.jpg' %}"
+                    alt="gallery"
+                  />
+                  <div class="caption">
+                    <h3><a href="#">التربية الإسلامية</a></h3>
+                    <a
+                      href="{% static 'images/gallery-img-4.jpg' %}"
+                      class="zoom"
+                      data-rel="prettyPhoto[gallery1]"
+                      ><i class="fa fa-expand" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="frame">
+                  <img
+                    src="{% static 'images/gallery-img-5.jpg' %}"
+                    alt="gallery"
+                  />
+                  <div class="caption">
+                    <h3><a href="#">التربية الإسلامية</a></h3>
+                    <a
+                      href="{% static 'images/gallery-img-5.jpg' %}"
+                      class="zoom"
+                      data-rel="prettyPhoto[gallery1]"
+                      ><i class="fa fa-expand" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="frame">
+                  <img
+                    src="{% static 'images/gallery-img-6.jpg' %}"
+                    alt="gallery"
+                  />
+                  <div class="caption">
+                    <h3><a href="#">التربية الإسلامية</a></h3>
+                    <a
+                      href="{% static 'images/gallery-img-6.jpg' %}"
+                      class="zoom"
+                      data-rel="prettyPhoto[gallery1]"
+                      ><i class="fa fa-expand" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="frame">
+                  <img
+                    src="{% static 'images/gallery-img-7.jpg' %}"
+                    alt="gallery"
+                  />
+                  <div class="caption">
+                    <h3><a href="#">التربية الإسلامية</a></h3>
+                    <a
+                      href="{% static 'images/gallery-img-7.jpg' %}"
+                      class="zoom"
+                      data-rel="prettyPhoto[gallery1]"
+                      ><i class="fa fa-expand" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-row">
+              <a href="#" class="btn-style-1">تحميل المزيد</a>
+            </div>
+          </div>
+        </section>
+        <!--Gallery Style 1-->
+
+        <!--Donation Section-->
+        <section class="donation-section">
+          <div class="container">
+            <div class="heading-center">
+              <strong class="title">تبرعك</strong>
+              <h2>ترميم، بسبب، ضخم، موسك</h2>
+              <div class="text-holder">
+                <p>
+                  هذا هو الإصدار فوتوشوب أبجد هوز. بروين غرافيدا نيبه فيل فيليت
+                  أوكتور . إينيان سوليسليتودين.
+                </p>
+              </div>
+            </div>
+            <div class="progress-box">
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 50%"
+                >
+                  50%
+                </div>
+              </div>
+            </div>
+            <strong class="title-2">نحن بحاجة تبرعك للمسجد</strong>
+            <div class="btn-row">
+              <a href="donation.html" class="btn-style-1">الآن التبرع</a>
+            </div>
+          </div>
+        </section>
+        <!--Donation Section-->
+
+        <!--Blog Section-->
+        <section class="blog-section">
+          <div class="container">
+            <div class="heading-center">
+              <strong class="title">المدونة الأخيرة</strong>
+              <h2>ليتس من بلوق</h2>
+              <div class="text-holder">
+                <p>
+                  هذا هو الإصدار فوتوشوب أبجد هوز. بروين غرافيدا نيبه فيل فيليت
+                  أوكتور . إينيان سوليسليتودين.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <div class="post-box">
+                  <div class="frame">
+                    <a href="#"
+                      ><img
+                        src="{% static 'images/blog-home-img-1.jpg' %}"
+                        alt="img"
+                    /></a>
+                  </div>
+                  <div class="text-box">
+                    <h3><a href="blog.html">شباب المركز الإسلامي</a></h3>
+                    <div class="post-meta">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-calendar" aria-hidden="true"></i>22
+                            أغسطس، 2021</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-user" aria-hidden="true"></i
+                            >رميز</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-heart" aria-hidden="true"></i>2303
+                            ليكيس</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <p>
+                      موربي سيمبر، دوي سوداليس أليكيت إمبرديت، لاكوس ليغولا كونغ
+                      نيك، كويس بريتيوم ليكتوس ليبيرو id.lacinia id proin ouctor
+                      volputate litora، أديبيسشينغ دويس تيلوس جوستو سوسيوسكو
+                      نيك.
+                    </p>
+                    <a href="blog-detail.html" class="read-post">اقرأ أكثر</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="post-box">
+                  <div class="frame">
+                    <a href="#"
+                      ><img
+                        src="{% static 'images/blog-home-img-2.jpg' %}"
+                        alt="img"
+                    /></a>
+                  </div>
+                  <div class="text-box">
+                    <h3><a href="{% url 'Quran:Blog' %}">الزواج والإسلام</a></h3>
+                    <div class="post-meta">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-calendar" aria-hidden="true"></i>22
+                            أغسطس، 2021</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-user" aria-hidden="true"></i
+                            >رميز</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-heart" aria-hidden="true"></i>203
+                            الإعجابات</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <p>
+                      موربي سيمبر، دوي سوداليس أليكيت إمبرديت، لاكوس ليغولا كونغ
+                      نيك، كويس بريتيوم ليكتوس ليبيرو id.lacinia id proin ouctor
+                      volputate litora، أديبيسشينغ دويس تيلوس جوستو سوسيوسكو
+                      نيك.
+                    </p>
+                    <a href="{% url 'Quran:BlogDetail' %}" class="read-post">اقرأ أكثر</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="post-box">
+                  <div class="frame">
+                    <a href="#"
+                      ><img
+                        src="{% static 'images/blog-home-img-3.jpg' %}"
+                        alt="img"
+                    /></a>
+                  </div>
+                  <div class="text-box">
+                    <h3><a href="{% url 'Quran:Blog' %}">شباب المركز الإسلامي</a></h3>
+                    <div class="post-meta">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-calendar" aria-hidden="true"></i>22
+                            أغسطس، 2021</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-user" aria-hidden="true"></i
+                            >رميز</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-heart" aria-hidden="true"></i>203
+                            الإعجابات</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <p>
+                      موربي سيمبر، دوي سوداليس أليكيت إمبرديت، لاكوس ليغولا كونغ
+                      نيك، كويس بريتيوم ليكتوس ليبيرو id.lacinia id proin ouctor
+                      volputate litora، أديبيسشينغ دويس تيلوس جوستو سوسيوسكو
+                      نيك.
+                    </p>
+                    <a href="{% url 'Quran:BlogDetail' %}" class="read-post">اقرأ أكثر</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Blog Section-->
+
+        <section class="prayer-timings">
+          <div class="container">
+            <h2>أوقات الصلاة</h2>
+            <div class="row">
+              <div class="col-md-2 col-sm-4">
+                <div class="timing-box">
+                  <div class="shape-1">
+                    <div class="text-holder">
+                      <h3>الفجر</h3>
+                      <span>الفجر الصلاة</span> <b>4:00 صباحا</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <div class="timing-box">
+                  <div class="shape-1">
+                    <div class="text-holder">
+                      <h3>شروق الشمس</h3>
+                      <span>وقت الشروق</span> <b>5:30 صباحا</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <div class="timing-box">
+                  <div class="shape-1">
+                    <div class="text-holder">
+                      <h3>الظهر</h3>
+                      <span>صلاة الظهر</span> <b>12:12 مساء</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <div class="timing-box">
+                  <div class="shape-1">
+                    <div class="text-holder">
+                      <h3>اسار</h3>
+                      <span>صلاة الظهر</span> <b>3:53 مساء</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <div class="timing-box">
+                  <div class="shape-1">
+                    <div class="text-holder">
+                      <h3>المغرب</h3>
+                      <span>الغروب، براير</span> <b>6:53 مساء</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <div class="timing-box">
+                  <div class="shape-1">
+                    <div class="text-holder">
+                      <h3>العشاء</h3>
+                      <span>صلاة المساء</span> <b>8:23 مساء</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--Mian Content-->
+
+      <!--Footer-->
+      <footer id="footer">
+        <section class="footer-section-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <div class="footer-box">
+                  <a href="{% url 'Quran:Home' %}" class="footer-logo"
+                    ><img src="{% static 'images/logo.png' %}" alt="logo"
+                  /></a>
+                  <p>
+                    هذا هو الإصدار فوتوشوب أبجد هوز. بروين غرافيدا نيبه فيل
+                    فيليت أوكتور أليكيت. Aenean سوليسيتودين، لوريم كويس بيبندوم
+                    أوكتور،
+                  </p>
+                  <address>
+                    <ul>
+                      <li>
+                        <i class="fa fa-map-o" aria-hidden="true"></i>209،
+                        البناية، -، أفينو-02، الولايات المتحدة
+                      </li>
+                      <li>
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i
+                        ><a href="mailto:">info@salat.com</a>
+                      </li>
+                      <li>
+                        <i
+                          class="fa fa-volume-control-phone"
+                          aria-hidden="true"
+                        ></i
+                        >+ 1 315 - 000 - 6565
+                      </li>
+                    </ul>
+                  </address>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="footer-box">
+                  <h3>أحدث الأخبار</h3>
+                  <div class="latest-news-widget">
+                    <ul>
+                      <li>
+                        <div class="thumb">
+                          <a href="#"
+                            ><img
+                              src="{% static 'images/latest-img-1.jpg' %}"
+                              alt="latest"
+                          /></a>
+                        </div>
+                        <div class="text-col">
+                          <h5><a href="#">المركز الإسلامي الشباب مشاركة</a></h5>
+                          <span
+                            ><i class="fa fa-calendar" aria-hidden="true"></i>22
+                            أغسطس، 2021</span
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <div class="thumb">
+                          <a href="#"
+                            ><img
+                              src="{% static 'images/latest-img-2.jpg' %}"
+                              alt="latest"
+                          /></a>
+                        </div>
+                        <div class="text-col">
+                          <h5><a href="#">المركز الإسلامي الشباب مشاركة</a></h5>
+                          <span
+                            ><i class="fa fa-calendar" aria-hidden="true"></i>22
+                            أغسطس، 2021</span
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <div class="thumb">
+                          <a href="#"
+                            ><img
+                              src="{% static 'images/latest-img-1.jpg' %}"
+                              alt="latest"
+                          /></a>
+                        </div>
+                        <div class="text-col">
+                          <h5><a href="#">المركز الإسلامي الشباب مشاركة</a></h5>
+                          <span
+                            ><i class="fa fa-calendar" aria-hidden="true"></i>22
+                            أغسطس، 2021</span
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="footer-box">
+                  <h3>النشرة الإخبارية</h3>
+                  <p>
+                    لوريم إيبسوم دولور سيت أميت، تيتور أديبيسشينغ إيليت. أليكام
+                    فيهيكوليس موليس أورنا فيل ديغنيسيم.
+                  </p>
+                  <form action="#">
+                    <input type="text" placeholder="اسمك" required />
+                    <div class="input-box">
+                      <input
+                        type="text"
+                        placeholder="بريدك الإلكتروني هنا"
+                        required
+                      />
+                      <button type="submit">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="footer-section-2">
+          <div class="container">
+            <strong class="copyright"
+              >&نسخ؛ 2021. جميع الحقوق محفوظة. صلاة من ثيميلوبر</strong
+            >
+            <div class="footer-social">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <!--Footer-->
+    </div>
+    <!--Wrapper-->
+    <!--JQUERY START-->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <!--Bootstrap-->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!--Owl Carousel-->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!--EVENT TIMER JS-->
+    <script src="{% static 'js/jquery_countdown.js' %}"></script>
+    <!---Modernizr Script-->
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
+    <!---Search Script-->
+    <script src="{% static 'js/search-script.js' %}"></script>
+    <!--Custom Script-->
+    <script src="{% static 'js/custom_script.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+{% extends '../base.html' %}
+{% load static %}
+
+{% block Content %}
+
+<!--INNER BANNER-->
+<div id="inner-banner">
+  <div class="container">
+    <h1>Search Result</h1>
+    <ol class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li class="active">Search Result</li>
+    </ol>
+  </div>
+</div>
+<!--INNER BANNER-->
+<div id="main">
+  <!--404 START-->
+  <section class="error-section search-not-found">
+    <div class="container">
+      <div class="holder">
+        <span class="oops">Oh!</span>
+        <strong class="error-text">Nothing Found!</strong>
+        <strong class="title"
+          >The Requested Search Not Found, Try Again!</strong
+        >
+        <form action="#">
+          <input
+            required
+            type="text"
+            placeholder="Enter keywords for search again"
+          />
+          <button type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--404 END-->
+</div>
+{% endblock Content %}

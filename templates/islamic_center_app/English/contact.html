@@ -1,0 +1,136 @@
+{% extends '../base.html' %} {% load static %} {% block Content %}
+
+<!--INNER BANNER-->
+<div id="inner-banner">
+  <div class="container">
+    <h1>Contact</h1>
+    <ol class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li class="active">Gallery Medium Column</li>
+    </ol>
+  </div>
+</div>
+<!--INNER BANNER-->
+<div id="main">
+  <!--Contact-->
+  <section class="contact-section">
+    <div class="container">
+      <div class="map-row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4695664516503!2d-73.98325238428714!3d40.72969204446945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25976717a2c8f%3A0x7734b44bae04ca0c!2s209%20Avenue%20A%2C%20New%20York%2C%20NY%2010009%2C%20USA!5e0!3m2!1sen!2s!4v1631197571689!5m2!1sen!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="contact-row">
+        <div class="row">
+          <div class="col-md-5 col-sm-6">
+            <div class="contact-box">
+              <h3>Contact Information:</h3>
+              <ul>
+                <li>
+                  <img
+                    src="{% static 'images/contact-icon-1.png' %}"
+                    alt="img"
+                  />
+                  <div class="holder">
+                    <p>
+                      209, Building - Avenue-02, United states, United States
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <img
+                    src="{% static 'images/contact-icon-2.png' %}"
+                    alt="img"
+                  />
+                  <div class="holder">
+                    <p>+1 315 - 000 - 6565</p>
+                    <p>+1 315 - 000 - 6565</p>
+                  </div>
+                </li>
+                <li>
+                  <img
+                    src="{% static 'images/contact-icon-3.png' %}"
+                    alt="img"
+                  />
+                  <div class="holder">
+                    <p><a href="mailto:">info@salat.com</a></p>
+                  </div>
+                </li>
+                <li>
+                  <img
+                    src="{% static 'images/contact-icon-4.png' %}"
+                    alt="img"
+                  />
+                  <div class="holder">
+                    <p><a href="#">www.salat.com</a></p>
+                  </div>
+                </li>
+              </ul>
+              <div class="text-col">
+                <p>
+                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                  vel velit auctor aliquet. Aenean sollicitudin.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-6">
+            <div class="contact-form">
+              <h3>Get Contact us</h3>
+              <form action="form.php" method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input
+                      required
+                      pattern="[a-zA-Z ]+"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      required
+                      name="email"
+                      type="text"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input required type="text" placeholder="Your Contact" />
+                  </div>
+                  <div class="col-md-6">
+                    <select name="subject">
+                      <option>Select Subject</option>
+                      <option>Select one</option>
+                      <option>Select two</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <textarea
+                      name="message"
+                      required
+                      cols="10"
+                      rows="10"
+                      placeholder="Comments"
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="submit" value="Get Contact" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Contact-->
+</div>
+{% endblock Content %}

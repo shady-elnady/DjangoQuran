@@ -1,0 +1,392 @@
+{% extends '../base.html' %} {% load static %} {% block Content %}
+
+<!--INNER BANNER-->
+<div id="inner-banner">
+  <div class="container">
+    <h1>About</h1>
+    <ol class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li class="active">About</li>
+    </ol>
+  </div>
+</div>
+<!--INNER BANNER-->
+<div id="main">
+  <!--About-->
+  <section class="about-section">
+    <section class="history-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="frame">
+              <img src="{% static 'images/history-img.png' %}" alt="history" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="text-box">
+              <div class="heading-left">
+                <strong class="title">Welcome To salat</strong>
+                <h2>About us</h2>
+              </div>
+              <b>In The Name Of Allah The Beneficent The Merciful</b>
+              <p>
+                Islam had a tremendous impact on world history as well as the
+                present-day, Aenean sollicitudin, lorem quis bibendum auctor,
+                nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+                sed odio sit amet nibh vulputate cursus a sit amet mauris.
+              </p>
+              <p>
+                The larger community turns to us as a trusted source of accurate
+                information on Islam and Muslims. Our doors are open to our
+                neighbors.
+              </p>
+              <a href="about.html" class="btn-style-1">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-vision">
+      <div class="container">
+        <div class="heading-center">
+          <strong class="title">Introduction</strong>
+          <h2>Our Vision</h2>
+          <div class="text-holder">
+            <p>
+              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+              velit auctor aliquet. Aenean sollicitudin.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="vision-box">
+              <span class="icon"
+                ><i class="fa fa-moon-o" aria-hidden="true"></i
+              ></span>
+              <h3><a href="crowd-funding.html">Faith</a></h3>
+              <p>
+                Morbi semper, dui sodales aliquet imperdiet, lacus ligula congue
+                neque, quis pretium lectus libero id.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="vision-box">
+              <span class="icon"
+                ><i class="fa fa-graduation-cap" aria-hidden="true"></i
+              ></span>
+              <h3><a href="crowd-funding.html">Education</a></h3>
+              <p>
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet. Aenean sollicitudin,
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="vision-box">
+              <span class="icon"
+                ><i class="fa fa-handshake-o" aria-hidden="true"></i
+              ></span>
+              <h3><a href="crowd-funding.html">Services</a></h3>
+              <p>
+                Morbi semper, dui sodales aliquet imperdiet, lacus ligula congue
+                neque, quis pretium lectus libero id.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-gallery">
+      <div class="container-fluid gallery">
+        <div class="col-md-3 col-sm-6">
+          <div class="frame">
+            <img src="{% static 'images/about-gallery-img-1.jpg' %}" alt="" />
+            <div class="caption">
+              <h3>Islamic-Community</h3>
+              <strong class="title">Video / image</strong>
+              <a
+                href="#"
+                class="zoom"
+                data-toggle="modal"
+                data-target="#myModal"
+                ><i class="fa fa-play" aria-hidden="true"></i
+              ></a>
+              <a
+                href="{% static 'images/about-gallery-img-1.jpg' %}"
+                class="zoom"
+                data-rel="prettyPhoto[gallery1]"
+                ><i class="fa fa-image" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <iframe
+                    src="https://www.youtube.com/embed/T6cWEOVcrS8"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="frame">
+            <img src="{% static 'images/about-gallery-img-2.jpg' %}" alt="" />
+            <div class="caption">
+              <h3>Islamic-Community</h3>
+              <strong class="title">Video / image</strong>
+              <a
+                href="#"
+                class="zoom"
+                data-toggle="modal"
+                data-target="#myModal2"
+                ><i class="fa fa-play" aria-hidden="true"></i
+              ></a>
+              <a
+                href="{% static 'images/about-gallery-img-2.jpg' %}"
+                class="zoom"
+                data-rel="prettyPhoto[gallery1]"
+                ><i class="fa fa-image" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <iframe
+                    src="https://www.youtube.com/embed/T6cWEOVcrS8"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="frame">
+            <img src="{% static 'images/about-gallery-img-3.jpg' %}" alt="" />
+            <div class="caption">
+              <h3>Islamic-Community</h3>
+              <strong class="title">Video / image</strong>
+              <a
+                href="#"
+                class="zoom"
+                data-toggle="modal"
+                data-target="#myModal3"
+                ><i class="fa fa-play" aria-hidden="true"></i
+              ></a>
+              <a
+                href="{% static 'images/about-gallery-img-3.jpg' %}"
+                class="zoom"
+                data-rel="prettyPhoto[gallery1]"
+                ><i class="fa fa-image" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <iframe
+                    src="https://www.youtube.com/embed/T6cWEOVcrS8"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="frame">
+            <img src="{% static 'images/about-gallery-img-4.jpg' %}" alt="" />
+            <div class="caption">
+              <h3>Islamic-Community</h3>
+              <strong class="title">Video / image</strong>
+              <a
+                href="#"
+                class="zoom"
+                data-toggle="modal"
+                data-target="#myModal4"
+                ><i class="fa fa-play" aria-hidden="true"></i
+              ></a>
+              <a
+                href="{% static 'images/about-gallery-img-4.jpg' %}"
+                class="zoom"
+                data-rel="prettyPhoto[gallery1]"
+                ><i class="fa fa-image" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <iframe
+                    src="https://www.youtube.com/embed/T6cWEOVcrS8"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team-section">
+      <div class="container">
+        <div class="heading-center">
+          <strong class="title">salat Scholars</strong>
+          <h2>meet expert Scholars</h2>
+          <div class="text-holder">
+            <p>
+              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+              velit auctor aliquet. Aenean sollicitudin.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="team-box">
+              <div class="frame">
+                <a href="#"
+                  ><img
+                    src="{% static 'images/team/team-img-1.jpg' %}"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="text-box">
+                <h2><a href="#">Rameez</a></h2>
+                <strong class="title">Islamic Teacher</strong>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-google-plus" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="team-box">
+              <div class="frame">
+                <a href="#"
+                  ><img
+                    src="{% static 'images/team/team-img-2.jpg' %}"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="text-box">
+                <h2><a href="#">Ayesha</a></h2>
+                <strong class="title">Islamic Teacher</strong>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-google-plus" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="team-box">
+              <div class="frame">
+                <a href="#"
+                  ><img
+                    src="{% static 'images/team/team-img-4.jpg' %}"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="text-box">
+                <h2><a href="#">Syeda Ayesha</a></h2>
+                <strong class="title">Islamic Teache</strong>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-google-plus" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!--About-->
+</div>
+{% endblock Content %}

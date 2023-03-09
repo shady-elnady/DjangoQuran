@@ -1,0 +1,382 @@
+{% extends '../base.html' %} {% load static %} {% block Content %}
+<!--INNER BANNER-->
+<div id="inner-banner">
+  <div class="container">
+    <h1>Event Detail</h1>
+    <ol class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li class="active">Event Detail</li>
+    </ol>
+  </div>
+</div>
+<!--INNER BANNER-->
+<div id="main">
+  <!--BLOG START-->
+  <section class="blog-section blog-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-sm-8">
+          <!--IMAGE POST DETAIL START-->
+          <div class="post-box">
+            <div class="frame">
+              <img src="{% static 'images/blog-img-1.jpg' %}" alt="img" />
+              <div class="countdown-box">
+                <div class="countdown236"></div>
+              </div>
+            </div>
+            <div class="text-box">
+              <div class="post-meta">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-calendar" aria-hidden="true"></i>01 Sep,
+                      2021</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-user" aria-hidden="true"></i>Rameez</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-comment" aria-hidden="true"></i>2
+                      Comments</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-heart" aria-hidden="true"></i>208
+                      Likes</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="special-manager">
+                <p>
+                  Pellentesque suscipit ex quis turpis malesuada viverra.
+                  Suspendisse ultricies tortor vel diam scelerisque facilisis.
+                  Aliquam id consequat nisl, id maximus nunc. Cras ut nulla
+                  sagittis, ullamcorper tellus eget, interdum massa. Duis tempor
+                  hendrerit elementum. Aliquam varius sapien nec ipsum luctus,
+                  at consectetur velit finibus. Maecenas eleifend sodales eros
+                  at elementum. Phasellus diam enim, maximus in sollicitudin sit
+                  amet, sollicitudin quis lacus. Maecenas in massa orci.
+                </p>
+                <p>
+                  Etiam ac pharetra turpis. Integer nec pulvinar ipsum. Donec
+                  egestas commodo purus ut fermentum. Praesent orci neque,
+                  rutrum sed condimentum vitae, tincidunt sit amet elit. Etiam
+                  vel imperdiet erat. Pellentesque eget odio quis ex ornare
+                  eleifend.
+                </p>
+                <blockquote>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit
+                  amet, consectetur adipisc elit, sed do eiusmod tempor
+                  incididunt ut labore
+                </blockquote>
+                <p>
+                  Morbi congue gravida pharetra. Integer ac mi placerat, luctus
+                  dui eget, cursus enim. Praesent pharetra enim ornare facilisis
+                  rhoncus. Proin luctus ante eget nunc laoreet, in fringilla
+                  eros dapibus. Vivamus quis odio ac enim tincidunt blandit. Ut
+                  libero quam, tempus scelerisque sapien placerat, bibendum
+                  auctor orci. Vivamus diam urna, porta vel erat ac, suscipit
+                  dapibus leo.
+                </p>
+                <h2>Pray! Before It Is Late</h2>
+                <p>
+                  Curabitur mattis tincidunt aliquet. Nullam consequat interdum
+                  sollicitudin. Fusce at mi est. Vivamus feugiat est ut blandit
+                  consequat. Donec ante metus, lacinia vitae consequat eget,
+                  luctus et risus. Praesent eget convallis sapien. Suspendisse
+                  at metus cursus, porta arcu vitae, porttitor neque. Proin vel
+                  interdum erat, id facilisis diam.
+                </p>
+              </div>
+              <div class="share-post">
+                <strong class="title">Share Post</strong>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-google-plus" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-flickr" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="comment-form">
+              <h3>2 Comments</h3>
+              <ul id="comments" class="cp-comments">
+                <li class="comment even thread-even depth-1" id="comment-3">
+                  <div class="thumb">
+                    <img alt="" src="{% static 'images/comment-img.jpg' %}" />
+                  </div>
+                  <div class="text">
+                    <h4><a href="#" class="url">Rameez</a></h4>
+                    <p>
+                      Curabitur fermentum, lorem in rhoncus sodales, augue neque
+                      hendrerit metus, vel pharetra sem sapien non elit. Nulla
+                      euismod orci eget elementum ornare. Etiam cursus nibh
+                      purus, vitae sollicitudin metus porttitor eget. Sed eget
+                      tempor sem, in maximus magna. Vivamus quis dignissim
+                      sapien, et hendrerit magna. Vivamus elementum dictum elit.
+                    </p>
+                    <div class="post-time">
+                      <ul>
+                        <li>
+                          <p>12:00 am - Aug 24, 2021</p>
+                        </li>
+                        <li>
+                          <a class="comment-reply-link" href="#">Reply</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="children">
+                    <li class="comment odd alt depth-2" id="comment-4">
+                      <div class="thumb">
+                        <img
+                          alt=""
+                          src="{% static 'images/comment-img.jpg' %}"
+                        />
+                      </div>
+                      <div class="text">
+                        <h4><a href="#">Rameez</a></h4>
+                        <p>
+                          Integer varius metus lacus, et fringilla nibh
+                          vulputate in. Ut et ultricies ante, ut volutpat est.
+                          Morbi tempus nulla in pharetra accumsan.
+                        </p>
+                        <div class="post-time">
+                          <ul>
+                            <li>
+                              <p>6:01 am - July 12, 2021</p>
+                            </li>
+                            <li>
+                              <a class="comment-reply-link" href="#">Reply</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <ul class="children">
+                        <li class="comment even depth-3" id="comment-5">
+                          <div class="thumb">
+                            <img
+                              alt=""
+                              src="{% static 'images/comment-img-2.jpg' %}"
+                            />
+                          </div>
+                          <div class="text">
+                            <h4><a href="#">Rameez</a></h4>
+                            <p>
+                              Similique sunt in culpa qui officia.vero eos et
+                              accusamus et iusto odio dignissimos ducimus qui
+                              blanditiis praesentium voluptatum deleniti atque
+                              corrupti quos dolores
+                            </p>
+                            <div class="post-time">
+                              <ul>
+                                <li>
+                                  <p>7:04 am - Sep 24, 2021</p>
+                                </li>
+                                <li>
+                                  <a class="comment-reply-link" href="#"
+                                    >Reply</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div id="respond" class="comment-respond">
+                <h3 id="reply-title" class="comment-reply-title">
+                  Leave a Comment
+                </h3>
+                <form action="#">
+                  <p class="comment-notes">
+                    <span id="email-notes"
+                      >Your email address will not be published.</span
+                    >
+                    Required fields are marked <span class="required">*</span>
+                  </p>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <input placeholder="Name *" type="text" />
+                    </div>
+                    <div class="col-md-4">
+                      <input placeholder="Email *" type="text" />
+                    </div>
+                    <div class="col-md-4">
+                      <input placeholder="Subject *" type="text" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <textarea
+                        cols="60"
+                        rows="10"
+                        placeholder="Comments *"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <p class="form-submit">
+                    <input type="submit" value="Post Comment" />
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--IMAGE POST DETAIL END-->
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <aside>
+            <div class="sidebar">
+              <div class="sidebar-box">
+                <h3>Search</h3>
+                <form action="#">
+                  <input
+                    placeholder="Enter your Keywords"
+                    required
+                    type="text"
+                  />
+                  <button type="submit" value="">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="sidebar-box">
+                <div class="sidebar-text-widget">
+                  <h3>About Salat</h3>
+                  <p>
+                    Morbi congue gravida pharetra. Integer ac mi placerat,
+                    luctus dui eget, cursus enim. Praesent pharetra enim ornare
+                    facilisis rhoncus.
+                  </p>
+                </div>
+              </div>
+              <div class="sidebar-box">
+                <h3>Upcoming Events</h3>
+                <div class="news-widget">
+                  <ul>
+                    <li>
+                      <div class="thumb">
+                        <a href="#"
+                          ><img
+                            src="{% static 'images/news-thumb-img-1.jpg' %}"
+                            alt="img"
+                        /></a>
+                      </div>
+                      <div class="text-col">
+                        <a href="#">Quran Recitation..</a>
+                        <span>02 Sep, 2021</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                        <a href="#"
+                          ><img
+                            src="{% static 'images/news-thumb-img-2.jpg' %}"
+                            alt="img"
+                        /></a>
+                      </div>
+                      <div class="text-col">
+                        <a href="#">Quran Recitation..</a>
+                        <span>06 Sep, 2021</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                        <a href="#"
+                          ><img
+                            src="{% static 'images/news-thumb-img-3.jpg' %}"
+                            alt="img"
+                        /></a>
+                      </div>
+                      <div class="text-col">
+                        <a href="#">Quran Recitation..</a>
+                        <span>08 Sep, 2021</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar-box">
+                <h3>Popular tags</h3>
+                <div class="tags">
+                  <a href="#">Quran</a> <a href="#">Islam</a>
+                  <a href="#">Donate</a> <a href="#">Salat</a>
+                  <a href="#">Azan</a> <a href="#">Zakat</a>
+                  <a href="#">Roza</a>
+                </div>
+              </div>
+              <div class="sidebar-box">
+                <h3>Instagram</h3>
+                <div class="instagram-widget">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="{% static 'images/instagram-img-1.jpg' %}"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="{% static 'images/instagram-img-2.jpg' %}"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="{% static 'images/instagram-img-3.jpg' %}"
+                          alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="{% static 'images/instagram-img-4.jpg' %}"
+                          alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--BLOG END-->
+</div>
+{% endblock Content %}
