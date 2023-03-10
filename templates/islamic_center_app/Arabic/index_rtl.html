@@ -6,6 +6,12 @@
     <title>Salat - Islamic Center Responsive HTML 5 Template</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'icons/quran.png' %}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'icons/quran.png' %}" />
+
+ 
     <!--Css Fils-->
     <link
       href="{% static 'css/style.css' %}"
@@ -46,7 +52,7 @@
       type="text/css"
     />
 
-    {% comment %}
+ 
     <!-- Our project just needs Font Awesome Free's Solid and Brand files -->
     <link
       href="{% static 'fontawesomefree/css/fontawesome.css' %}"
@@ -63,7 +69,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    {% endcomment %} {% comment %}
+   {% comment %}
     <!-- Our project needs Font Awesome Pro's Classic Solid, Sharp Solid, Sharp Regular, and Brand files -->
     <link
       href="{% static 'fontawesomepro/css/fontawesome.css' %}"
@@ -92,12 +98,12 @@
     />
     {% endcomment %}
 
-    <!-- Our project needs Font Awesome Pro's Classic Solid, Sharp Solid, Sharp Regular, and Brand files -->
+    {% comment %} <!-- Our project needs Font Awesome Pro's Classic Solid, Sharp Solid, Sharp Regular, and Brand files -->
     <script src="{% static 'fontawesomepro/js/fontawesome.js' %}"></script>
     <script src="{% static 'fontawesomepro/js/solid.js' %}"></script>
     <script src="{% static 'fontawesomepro/js/sharp-solid.js' %}"></script>
     <script src="{% static 'fontawesomepro/js/sharp-regular.js' %}"></script>
-    <script src="{% static 'fontawesomepro/js/brands.js' %}"></script>
+    <script src="{% static 'fontawesomepro/js/brands.js' %}"></script> {% endcomment %}
 
     {% comment %}
     <!-- One file includes all the Font Awesome Pro icons and utilities -->
@@ -263,8 +269,8 @@
                       </ul>
                     </li>
                     <li
-                    {% if request.resolver_match.view_name == 'Quran:Scolars' %}class="active"{% endif %}
-                    ><a href="{% url 'Quran:Scolars' %}">العلماء</a></li>
+                    {% if request.resolver_match.view_name == 'Quran:Scholars' %}class="active"{% endif %}
+                    ><a href="{% url 'Quran:Scholars' %}">العلماء</a></li>
                     <li>
                       <a href="#"
                         >مدونة<i class="fa fa-caret-down" aria-hidden="true"></i

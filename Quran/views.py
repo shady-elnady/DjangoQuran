@@ -25,7 +25,7 @@ def about(request):
 
 @login_required
 def blogDetail(request):
-    return render(request= request, template_name= f"{englishAppFolder}/blog-dtail.html")
+    return render(request= request, template_name= f"{englishAppFolder}/blog-detail.html")
 
 @login_required
 def blog(request):
