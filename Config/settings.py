@@ -15,6 +15,7 @@ from pathlib import Path
 import dj_database_url
 from decouple import config
 from django.urls import reverse_lazy
+from gqlauth.settings_type import GqlAuthSettings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -54,6 +55,8 @@ THIRD_LIBRARIES= [
     'whitenoise.runserver_nostatic',
     # 'fontawesomepro',
     'fontawesomefree',
+    "strawberry_django",
+    "gqlauth",
 ]
 
 
@@ -97,6 +100,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # for Langauge
     'django.middleware.locale.LocaleMiddleware',
+    'gqlauth.core.middlewares.django_jwt_middleware' # Stawberry
+]
+
+# Need for Strawberry
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
 ]
 
 ROOT_URLCONF = 'Config.urls'
@@ -224,3 +233,22 @@ REST_FRAMEWORK = {
 LOGIN_URL = reverse_lazy('User:LogIn')
 LOGIN_REDIRECT_URL = reverse_lazy('Quran:Home')
 LOGOUT_REDIRECT_URL = reverse_lazy('User:LogIn')
+
+## Strawberry
+# We will disable captcha validation for now, just for ease of setup.
+GQL_AUTH = GqlAuthSettings(
+    LOGIN_REQUIRE_CAPTCHA=False,
+    REGISTER_REQUIRE_CAPTCHA=False,
+)
+
+# GQL_AUTH = GqlAuthSettings(
+#     LOGIN_REQUIRE_CAPTCHA=True,
+#     REGISTER_REQUIRE_CAPTCHA=True,
+#     CAPTCHA_SAVE_IMAGE=True,
+#     SEND_ACTIVATION_EMAIL=False,
+# )
+
+# custom settings start here
+EMAIL_HOST = "mail.privateemail.com"
+EMAIL_HOST_USER = "diffrent_than_gqlauth_default@cccc.com"
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

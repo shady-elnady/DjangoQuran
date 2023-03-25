@@ -17,9 +17,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
+
 from rest_framework.authtoken import views
+from strawberry.django.views import AsyncGraphQLView, GraphQLView
 
 from API.router import router
+from API.GraphQL.schema import arg_schema
+from API.GraphQL.relay_schema import relay_schema
 
 urlpatterns = [
     path("", include("User.urls", namespace= "User")), # Default Auth URL
@@ -28,7 +33,19 @@ urlpatterns = [
     path('api/',include('API.urls', namespace="API")),
     path('api-token-auth/', views.obtain_auth_token),
     path('api/', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    ## Strawberry
+    path("arg_schema", csrf_exempt(GraphQLView.as_view(schema=arg_schema))),
+    path(
+        "relay_schema",
+        csrf_exempt(GraphQLView.as_view(schema=relay_schema)),
+    ),
+    path("arg_schema_async", csrf_exempt(AsyncGraphQLView.as_view(schema=arg_schema))),
+    path(
+        "relay_schema_async",
+        csrf_exempt(AsyncGraphQLView.as_view(schema=relay_schema)),
+    ),
+    #
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
